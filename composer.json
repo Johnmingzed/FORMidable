@@ -1,0 +1,22 @@
+{
+    "name": "johnmingzed/formidable",
+    "description": "A generic object form for all usage",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "FORMidable\\": "src/FORMidable"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jonathan PAIN-CHAMMING'S",
+            "email": "jonathan.pchs@gmail.com"
+        },
+        {
+            "name": "Jambonbill",
+            "email": "jambonbill@gmail.com"
+        }
+    ],
+    "require": {}
+}
