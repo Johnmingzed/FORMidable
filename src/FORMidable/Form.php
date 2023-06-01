@@ -126,7 +126,7 @@ class Form
         $el->label($label);
 
         $this->list[] = $el;
-        
+
         return $el;
     }
 
@@ -143,7 +143,7 @@ class Form
         $el->label($label);
 
         $this->list[] = $el;
-        
+
         return $el;
     }
 
@@ -160,21 +160,7 @@ class Form
         $el->label($label);
 
         $this->list[] = $el;
-        
-        return $el;
-    }
 
-    public function addSelectObj(object $conf)
-    {
-        $el = new FormSelect((array)$conf->attributes);
-        $el->label($conf->label);
-        foreach($conf->options as $opt){
-            $name =$opt->name;
-            $value=$opt->value;
-            //if(!$value)$value=$name;
-            //$el->addOption($name, $value, (bool)$opt->selected);
-        }
-        $this->list[] = $el;
         return $el;
     }
 
