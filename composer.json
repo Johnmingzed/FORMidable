@@ -1,6 +1,8 @@
 {
     "name": "johnmingzed/formidable",
     "description": "A generic object form for all usage",
+    "version": "1.0",
+    "keywords": ["package", "composer", "CDA", "form", "object", "formulaire"],
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -18,5 +20,7 @@
             "email": "jambonbill@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "php": "^7.4 || ^8.0"
+    }
 }
