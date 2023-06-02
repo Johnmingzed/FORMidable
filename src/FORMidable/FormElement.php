@@ -76,6 +76,9 @@ abstract class FormElement
      */
     public function setAttribute(string $name, string $value)
     {
+        $name = strip_tags($name);
+        $value = strip_tags($value);
+
         if ($name == 'id') { //autodetected id
             $this->id = $value;
         }
@@ -93,22 +96,22 @@ abstract class FormElement
 
     public function htmlBefore(string $html)
     {
-        $this->beforeHtml=$html;
+        $this->beforeHtml = $html;
     }
 
     public function htmlAfter(string $html)
     {
-        $this->afterHtml=$html;
+        $this->afterHtml = $html;
     }
 
 
     public function labelAfter()
     {
-        $this->labelAfter=true;
+        $this->labelAfter = true;
     }
 
 
-    
+
     /**
      * Sets the label for the form element.
      *
@@ -130,7 +133,7 @@ abstract class FormElement
 
         //(before)
         $htm .= $this->beforeHtml;
-        
+
         //Print label if set
         if ($this->label && !$this->labelAfter) {
             $htm .= '<label for="' . $this->id . '">' . $this->label . '</label>';
